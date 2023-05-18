@@ -1,9 +1,123 @@
+
+body {
+    margin:  0;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    font-family: 'Martel', serif;
+    font-family: 'Montserrat', sans-serif;
+}
 .container{
     box-sizing: border-box;
     margin: 0 auto;
     max-width: 100%;
     padding: 0 20px;
 }
+.background-img{
+    background-image: url("https://industrial.bold-themes.com/yellow-factory/wp-content/uploads/sites/10/2016/10/background_2.jpg");
+    background-size: cover;
+    background-position: center; 
+    height: 600px;
+    width: 100%;    
+}
+.element-father{
+    position: relative;
+}
+.content{
+    position: relative;
+    top: 100px;
+    left: 10px;    
+}
+.barrita{
+    display: inline;
+    background-color: blue;
+    width:1px;
+    height: 0.1 px;
+    /* color: rgb(59, 59, 221); */
+    /* color: blue; */
+}
+.styled-h1{
+    color: white;
+    width: 50%;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.p-styled{
+    color: white; 
+    font-size: 1.9rem;
+}
+b{
+    color: blue;
+}
+.buttom-products, .buttom-cards{
+    color: white;
+    text-decoration: none;
+    border-radius: 1rem;
+    background-color: blue;
+    padding: 1rem 1.9rem;
+}
+
+.title-products{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    /* color: blue; */
+    /* color: blue; */
+}
+.buttom-cards{
+    margin-left: 5.5rem;
+    
+}
+.cards-image{
+    display: flex;
+    flex-direction: column;
+}
+img.img-card {
+    width: 20rem; 
+    margin-bottom: 0; 
+}
+
+.description-card{
+    text-align: center;
+    /* margin-top: 2rem; */
+}
+.card-content{
+    display: flex;
+    
+}
+.card{
+    margin: 0rem 0.4rem;
+    
+}
+.card p {
+    text-align: left;
+    padding-bottom: 0.5rem;
+    
+}
+.title-client{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    /* color: rgb(59, 59, 221); */
+}
+img.client-img {
+    width: 20rem;
+}
+.client-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+
+/* .img-banner {
+    max-width: 100%;
+    width: 100vw;
+} */
+
+
+
 
 @media screen and (min-width: 567px){
     .container{
@@ -20,14 +134,20 @@
     .container{
         max-width: 960px 
     }
+    .cards-image{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 @media screen and ( min-width: 1200px){
     .container{
         max-width: 1140px;
     }
+    
 }
 @media screen and (min-width: 1400px){
     .container{
         max-width: 1320px
     }
 }
+
