@@ -60,7 +60,7 @@ b{
     display: flex; 
     justify-content: center; 
     margin: auto;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 } 
  .card {
     width: 243px;
