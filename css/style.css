@@ -144,6 +144,113 @@ img.client-img {
 
 
 
+
+.bg-color{
+    background-color:  rgb(59, 59, 221) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.menu-principal {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.logo-superior {
+    margin: 0.5rem;
+}
+
+
+.encabezado-nosotros {
+    display: flex;
+    justify-content:space-around;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: justify;
+  }
+
+.elegirnos{
+    display: flex;
+   
+}
+
+.titulo-elegirnos {
+    margin: 2rem;
+    font-size: large;
+    justify-content: center;
+}
+
+
+.valor-agregado-1 {
+    /*flex-direction: column;*/
+    position: relative;
+    top: 50%;
+    /*justify-content: center;*/
+    /* color: white; */
+    /*margin-top: 27px;*/
+    padding: 10px 0px 10px 0px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+  
+.menu-item {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2.5rem;
+    justify-content: space-between;
+}
+
+.container-footer {
+    background-color: rgb(59, 59, 221);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.logo-inferior {
+    margin: 0.5rem;
+}
+
+.container-contact {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    }
+.contact-info {
+    margin: 0.5rem;
+}
+
+.footer-left {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    justify-content: space-between;
+    text-align: end;
+    margin: 20px;
+}
+
+.personal-data {
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+
+
 @media screen and (min-width: 567px){
     .container{
         max-width: 540px;
