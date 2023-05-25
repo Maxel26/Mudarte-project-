@@ -1,9 +1,148 @@
+
+body {
+    margin:  0;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    font-family: 'Martel', serif;
+    font-family: 'Montserrat', sans-serif;
+}
 .container{
     box-sizing: border-box;
     margin: 0 auto;
     max-width: 100%;
     padding: 0 20px;
 }
+.background-img{
+    background-image: url("https://industrial.bold-themes.com/yellow-factory/wp-content/uploads/sites/10/2016/10/background_2.jpg");
+    background-size: cover;
+    background-position: center; 
+    height: 600px;
+    width: 100%;    
+}
+.element-father{
+    position: relative;
+}
+.content{
+    position: relative;
+    top: 70px;
+    left: 10px;    
+}
+.barrita{
+    background-color: blue;
+    width:9rem;
+    height: 0.5rem;
+}
+.styled-h1{
+    color: white;
+    width: 90%;
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+.p-styled{
+    color: white; 
+    font-size: 1.9rem;
+}
+b{
+    color: blue;
+}
+.buttom-products, .buttom-cards{
+    color: white;
+    text-decoration: none;
+    border-radius: 1rem;
+    background-color: blue;
+    padding: 1rem 1.9rem;
+}
+
+
+/* desde aca inicia */
+
+.direction{
+    display: flex; 
+    justify-content: center; 
+    margin: auto;
+    flex-wrap: wrap;
+} 
+ .card {
+    width: 243px;
+    height: 475px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    transition: all 0.25s;
+    /* background-color: #B0E0E6; */
+    /* background-color: #2D68C4; */
+    /* background-color: #89CFF0; */
+    background-color: #6699CC;   
+}
+
+.container .card:hover{
+    transform: translateY(-35px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+    width: 243px;
+    height: 220px;
+}
+.container .card h4{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0;
+    /* color: white; */
+}
+.container .card p {
+    padding: 0 1rem;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    /* color: white; */
+}
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+}
+.buttom-card-products{
+    display: flex;
+    justify-content: center;
+    /* color: white; */
+    margin-top: 27px;
+    padding: 10px 0px 10px 0px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* hasta aca */
+
+.title-h3{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+img.client-img {
+    width: 17rem;
+}
+.client-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.client-img{
+    margin: 4rem 0;
+}
+
+
+/* .img-banner {
+    max-width: 100%;
+    width: 100vw;
+} */
+
+
+
 
 
 .bg-color{
@@ -116,28 +255,64 @@
     .container{
         max-width: 540px;
     }
+    .styled-h1{
+        width: 80%;
+        font-size: 3rem;
+        font-weight: 900;    
+    }
+    .title-h3{
+        font-size: 2.8rem;
+    }
+    .container .card img {
+        width: 330px;
+    }
+    .card {
+        width: 330px;
+        height: 430px;   
+    }   
 }
 
 @media screen and (min-width: 768px){
     .container{
         max-width: 720px;
     }
+    .content{
+        position: relative;
+        top: 100px;
+        left: 10px;    
+    }
 }
 @media screen and (min-width: 992px){
     .container{
         max-width: 960px 
     }
+    .styled-h1{
+        color: white;
+        width: 60%;
+    }
+    .client-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
+    
 }
 @media screen and ( min-width: 1200px){
     .container{
         max-width: 1140px;
     }
+    .styled-h1{
+        width: 50%;
+    }
+    .direction{
+        flex-wrap: nowrap;
+    } 
+    
 }
 @media screen and (min-width: 1400px){
     .container{
         max-width: 1320px
     }
 }
-
-
 
