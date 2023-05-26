@@ -11,6 +11,34 @@ h1,h2,h3,h4,h5,h6,p,a{
     max-width: 100%;
     padding: 0 20px;
 }
+.menu-item {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    /* padding: 2.5rem; */
+    justify-content: space-between    
+}
+.bg-color{
+    background-color:  rgb(59, 59, 221) ;
+    display: flex;
+    align-items: center;
+    height: 300px;   
+}
+.menu-principal {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;   
+}
+
+.logo-superior {
+    margin: 0.5rem;
+}
+.menu-principal li{
+    margin: 20px 0 ;
+}
 .title-products{
     text-align: center;
     margin-top: 5rem;
@@ -27,8 +55,8 @@ b{
     flex-wrap: wrap;
 } 
  .card {
-    width: 326px;
-    height: 430px;
+    width: 243px;
+    height: 475px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -48,7 +76,7 @@ b{
 }
 
 .container .card img {
-    width: 330px;
+    width: 243px;
     height: 220px;
 }
 .container .card h4{
@@ -79,26 +107,93 @@ b{
     background-color: aliceblue;
     border: 1px solid black;
     border-radius: 10px 10px 10px 10px;
+    color: black;
+}
+.container-footer {
+    background-color: rgb(59, 59, 221);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.logo-inferior {
+    margin: 0.5rem;
+}
+
+.container-contact {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    }
+.contact-info {
+    margin: 0.5rem;
+}
+
+.footer-left {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    justify-content: space-between;
+    text-align: end;
+    margin: 20px;
+}
+
+.personal-data {
+    color:whitesmoke;
+    text-decoration: none;
 }
 @media screen and (min-width: 567px){
     .container{
         max-width: 540px;
     }
+    .menu-principal {
+        width: 400px;       
+    }
+    .container .card img {
+        width: 330px;
+    }
+    .card {
+        width: 320px;
+        height: 430px;   
+    } 
 }
 
 @media screen and (min-width: 768px){
     .container{
         max-width: 720px;
     }
+    .menu-principal {
+        flex-direction: row;
+        gap: 110px;
+    }
+    .bg-color{
+        height: 130px;   
+    }
 }
 @media screen and (min-width: 992px){
     .container{
         max-width: 960px 
     }
+    .menu-principal {
+        width: 800px;
+        justify-content:flex-end ;   
+    }
 }
 @media screen and ( min-width: 1200px){
     .container{
         max-width: 1140px;
+    }
+    .menu-principal {
+        width: 1140px; 
+    }
+    .direction{
+        /* flex-wrap: nowrap; */
     }
     
 }

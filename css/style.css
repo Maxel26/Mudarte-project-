@@ -157,8 +157,7 @@ img.client-img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    list-style: none;
-    
+    list-style: none;    
 }
 
 .logo-superior {
@@ -212,8 +211,7 @@ img.client-img {
     font-weight: bold;
     text-decoration: none;
     /* padding: 2.5rem; */
-    justify-content: space-between;
-    
+    justify-content: space-between    
 }
 
 .container-footer {
